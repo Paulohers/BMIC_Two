@@ -32,6 +32,13 @@ public class MainActivity extends Activity {
      * Metodo en el cual se inicializan varios componentes para capturar datos, y guardar sus valores dentro de variables.
      * */
     public void Inicializar(){
+        /**
+         * @param txt_peso variable que recibe el componente txt_Peso que se encuentra en la interfaz, y los relaciona.
+         * @param txt_Estatura variable que recibe el componente txt_Estatura que se encuentra en la interfaz, y los relaciona.
+         * @param txt_Edad variable que recibe el componente txt_Edad que se encuentra en la interfaz, y los relaciona.
+         * @param sexo variable que recibe el componente sexo que se encuentra en la interfaz, y los relaciona.
+         * @param calcular variable que recibe el componente calcular que se encuentra en la interfaz, y los relaciona.
+         * */
         txt_Peso = findViewById(R.id.txt_Peso);
         txt_Estatura = findViewById(R.id.txt_Estatura);
         txt_Edad = findViewById(R.id.txt_Edad);
@@ -186,6 +193,13 @@ public class MainActivity extends Activity {
           * */
         @Override
         public void onClick(View v) {
+            /**
+             * @param estaturaStr variable que recibe el valor de text view relacionado con la estatura de la persona.
+             * @param pesoStr variable que recibe el valor de text view relacionado con el peso de la persona.
+             * @param estaturaDbl variable que convierte el valor de estaturaStr a double.
+             * @param pesoDbl variable que convierte el valor de pesoStr a double.
+             * @param imc variable que almacena el valor que devuelve el metodo calcularIMC.
+             * */
             String estaturaStr = txt_Estatura.getText().toString();
             String pesoStr = txt_Peso.getText().toString();
             Double estaturaDbl = Double.parseDouble(estaturaStr);
