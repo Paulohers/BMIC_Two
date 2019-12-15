@@ -1,5 +1,8 @@
 package com.example.bmic_two;
 
+/**
+ * Conjunto de valores que se utilizaran en relacion con el imc enviado desde la clase MainActivity.
+ * */
 enum IMC{
     VERY_SEVERELY_UNDER_WEIGHT, SEVERELY_UNDER_WEIGHT, UNDER_WEIGHT, NORMAL, OVER_wEIGHT, MODERATELY_OBESE, SEVERELY_OBESE, VERY_SEVERELY_OBESE;
 }

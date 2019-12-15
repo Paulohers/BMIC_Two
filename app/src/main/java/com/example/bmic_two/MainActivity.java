@@ -28,7 +28,9 @@ public class MainActivity extends Activity {
         Inicializar();
         btnCalcularIMC();
     }
-
+    /**
+     * Metodo en el cual se inicializan varios componentes para capturar datos, y guardar sus valores dentro de variables.
+     * */
     public void Inicializar(){
         txt_Peso = findViewById(R.id.txt_Peso);
         txt_Estatura = findViewById(R.id.txt_Estatura);
@@ -159,7 +161,12 @@ public class MainActivity extends Activity {
 
         return  IMCEnum.getValue(categoria);
     }
-
+    /**
+     * Metodo para calcular el indice de masa corporal,
+     * recibe un parametro de altura, y peso, con ellos se realizara un operacion mediante una formula para devolver el imc de la persona.
+     * @param pesoDbl parametro en el que se almacenara el peso.
+     * @param estaturaDbl parametro en el que se almacenara la estatura.
+     * */
     private Double calcularIMC(Double pesoDbl, Double estaturaDbl){
         Double imc = pesoDbl / (estaturaDbl * estaturaDbl);
         return imc;
@@ -172,7 +179,11 @@ public class MainActivity extends Activity {
 
     class  BtnCalcularIhMCEscuchador implements View.OnClickListener {
 
-
+         /**
+          * Metodo que espera a que el boton sea presionado, en este metodo se encuentran metodos externos
+          * , seran ejecutados cuando se llame a llamar este metodo "OnClick", realizara el calculo IMC y obtendra la categoria.
+          * Almacenara los valores para mandarlos a la segunda pantalla, mediante el objeto intent de tipo Intent.
+          * */
         @Override
         public void onClick(View v) {
             String estaturaStr = txt_Estatura.getText().toString();

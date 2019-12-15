@@ -15,6 +15,10 @@ public class Pantalla2 extends Activity {
     EditText Resultado;
     TextView Categoria;
     private Bundle bundle;
+    /**
+     * En este metodo que se encarga de inicializar los componentes de nuestra segunda pantalla.
+     * Traera los valores que se mandaron desde "MainActivity" mediante Intent.
+     * */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
